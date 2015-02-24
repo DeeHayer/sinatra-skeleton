@@ -16,9 +16,10 @@ class CreateTables < ActiveRecord::Migration
             t.timestamps
         end
 
-        create_table :pins
+        create_table :pins do |t|
             t.string :price
             t.string :description
+        end
 
     end
 
