@@ -8,7 +8,10 @@ class CreateTables < ActiveRecord::Migration
             t.timestamps
         end
 
-        create_table :style do |t|
+        create_table :sarees do |t|
+            t.string :price
+            t.string :description
+            t.string :username
             t.string :bridal_lehenga
             t.string :lehenga
             t.string :sari 
@@ -16,9 +19,10 @@ class CreateTables < ActiveRecord::Migration
             t.timestamps
         end
 
-        create_table :pins do |t|
-            t.string :price
-            t.string :description
+        create_table :comments do |t|
+            t.string :body
+            t.string :username
+            t.timestamps
         end
 
     end
